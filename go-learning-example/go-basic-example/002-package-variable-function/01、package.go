@@ -4,6 +4,8 @@ package main
 
 https://go-tour-zh.appspot.com/basics/1
 
+包
+
 每个 Go 程序都是由包组成的。
 
 程序运行的入口是包 `main`。
