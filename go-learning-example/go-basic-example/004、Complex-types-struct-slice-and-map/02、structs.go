@@ -17,5 +17,14 @@ type Vertex struct {
 }
 
 func main() {
-	fmt.Println(Vertex{1,2})
+	v := Vertex{1, 2}
+	fmt.Println(v)
+
+	/*
+		结构体字段
+		结构体字段使用点号来访问。
+	*/
+	fmt.Println(v.X)
 }
+
+
