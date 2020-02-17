@@ -20,6 +20,7 @@ import "code.google.com/p/go-tour/pic"
 */
 
 
+// TODO 目前这里下载包，由于被墙，暂时未解决
 func Pic(dx, dy int) [][]uint8 {
 	// 外层slice
 	a := make([][]uint8, dy)
@@ -35,6 +36,8 @@ func Pic(dx, dy int) [][]uint8 {
 	}
 	return a
 }
+// https://blog.csdn.net/yjk13703623757/article/details/79619990
+// https://blog.csdn.net/qq_27818541/article/details/54346106
 
 func main() {
 	pic.Show(Pic)
