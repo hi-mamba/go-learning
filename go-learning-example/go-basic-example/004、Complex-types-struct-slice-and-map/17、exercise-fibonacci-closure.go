@@ -30,10 +30,20 @@ func fibonacci() func() int {
 	}
 }
 
+func fibonacci2() func() int {
+	a, b := 1, 0
+	return func() int {
+		a, b = b, a+b
+		return b
+	}
+}
+
 func main() {
 	f := fibonacci()
+	f2 := fibonacci2()
 	for i := 0; i < 10; i++ {
 		fmt.Println("fn(", i+1, ")", f())
+		fmt.Println("fn(", i+1, ")", f2())
 
 	}
 }
