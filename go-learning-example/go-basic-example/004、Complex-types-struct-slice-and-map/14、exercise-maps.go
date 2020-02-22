@@ -1,5 +1,11 @@
 package main
 
+import (
+	// 这个提示先忽略
+	"golang.org/x/tour/wc"
+)
+
+
 /*
 练习：map
 
@@ -9,14 +15,11 @@ package main
 
 */
 
-import (
-	"code.google.com/p/go-tour/wc"
-)
-
 func WordCount(s string) map[string]int {
 	return map[string]int{"x": 1}
 }
 
 func main() {
+	// 这个提示先忽略
 	wc.Test(WordCount)
 }

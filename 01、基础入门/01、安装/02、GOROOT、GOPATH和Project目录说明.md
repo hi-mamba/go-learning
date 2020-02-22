@@ -7,6 +7,9 @@
 # 可查看当前go环境变量
 > go env
 
+- GOROOT：GOROOT就是Go的安装目录。
+- GOPATH：GOPATH保存go项目代码。
+
 ##  GOROOT
   GOROOT就是go的安装路径
 
@@ -28,15 +31,15 @@ go install编译存放路径。不允许设置多个路径。可以为空。
 
 ## go目录结构1:
 ```
-project1 // (project1添加到GOPATH目录了)
-  -- bin
-  -- pkg
-  -- src
+project1-name  
+  -- bin               // 放置编译后生成的可执行文件 
+  -- pkg              // 放置编译后生成的包/库的归档文件；
+  -- src              // 放置项目和库的源文件
      -- models       // package
      -- controllers  // package
      -- main.go      // package main［注意，本文所有main.go均指包main的入口函数main所在文件］
 
- project2 // (project2添加到GOPATH目录了)
+ project2-name  
       -- bin
       -- pkg
       -- src

@@ -1,6 +1,7 @@
 package main
 
-import "code.google.com/p/go-tour/pic"
+// 这个提示先忽略,可以执行
+import "golang.org/x/tour/pic"
 
 /*
 
@@ -40,5 +41,6 @@ func Pic(dx, dy int) [][]uint8 {
 // https://blog.csdn.net/qq_27818541/article/details/54346106
 
 func main() {
+	// 这个提示先忽略,可以执行
 	pic.Show(Pic)
 }
