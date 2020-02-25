@@ -18,4 +18,10 @@ func main() {
 
 	var c, python, java = true, false, "no!"
 	fmt.Println(i, j, c, python, java)
+
+	// Go语言多个变量同时赋值
+	// Go 的“多重赋值”特性，可以轻松完成变量交换的任务,不在使用 中间变量进行变量的临时保存
+	i, j = j, i
+	fmt.Println(i, j)
+
 }
