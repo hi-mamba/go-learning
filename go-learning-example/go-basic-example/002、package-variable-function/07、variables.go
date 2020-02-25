@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	// 在go module下 你源码中 import …/ 这样的引入形式不支持了， 应该改成 import 模块名/包名
+	"go-basic-example/packageExample01"
 	"net"
 )
 
@@ -17,9 +19,11 @@ var 语句定义了一个变量的列表；跟函数的参数列表一样，类�
 
 var c, python, golang,java bool
 
+// 全局变量声明必须以 var 关键字开头，如果想要在 外部包 中使用全局变量的首字母必须大写。
+var X1 = 1
+
 func main() {
 	fmt.Println(c, java, python, golang)
-
 
 
 	//在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错
@@ -31,4 +35,7 @@ func main() {
 	fmt.Println(conn,"err:",err)
 	fmt.Println(conn2,"err:",err)
 	fmt.Println(conn2,"err2:",err2)
+
+
+	fmt.Println(packageExample01.Y2)
 }

@@ -1,4 +1,4 @@
-package math_example
+package mathExample
 
 func Add(x, y int) int {
 	return x + y
