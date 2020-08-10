@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
  懒汉模式（Lazy Loading）
@@ -17,16 +19,15 @@ var instance *lazyLoading
 func getInstance() *lazyLoading  {
 	// 存在线程安全问题，高并发时有可能创建多个对象
 	if instance == nil {
+		fmt.Println(" lazy loading")
 		instance = new(lazyLoading)
 	}
 	return instance
 }
 func main() {
-
 	s := getInstance()
 	s.name = "test"
 	fmt.Println(s.name)
 	s2 := getInstance()
 	fmt.Println(s2.name)
-
 }
