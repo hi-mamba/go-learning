@@ -1,4 +1,4 @@
-package _08_test
+package math_test
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 //测试整个文件 go test -v hello_test.go
 // 测试单个函数：$ go test -v hello_test.go -test.run TestHello
 
-func hello(t *testing.T){
+func TestHello1(t *testing.T){
 	fmt.Println("hello test")
 }
 
