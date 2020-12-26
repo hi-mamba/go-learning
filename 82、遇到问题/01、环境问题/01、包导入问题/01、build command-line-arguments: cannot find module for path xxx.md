@@ -13,3 +13,12 @@
 > 在go module下 你源码中 import …/ 这样的引入形式不支持了， 应该改成 import 模块名/包名  这样就ok了
 
 [build command-line-arguments: cannot load XXX: cannot find module providing package Goland包导入问题解决](https://blog.csdn.net/slphahaha/article/details/99637047?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
+
+## 本地包导入失败
+
+需要在goland 
+
+preferences 》 go 》 go modules 设置下面这个地址
+
+> https://goproxy.io/
