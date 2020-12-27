@@ -25,5 +25,8 @@ func main() {
 	fmt.Println("Hello World")
 	fmt.Println(mathExample.Add(1,1))
 	fmt.Println(mathExample.Sub(1,1))
+	
+
+	// 当前目录执行: go run hellowordl.go
 
 }
